@@ -1,0 +1,134 @@
+<HTML>
+<HEAD>
+<LINK REL=STYLESHEET HREF="../../style/main.css"TYPE="text/css">
+<META HTTP-EQUIV="Content-Type"CONTENT="text/html; charset=windows-1250">
+</HEAD>
+<BODY>
+<center><table width=97%><tr><td>
+<H3>DODATAK
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOJE BESKRAJA
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Novembra 1989, dok sam primao nagradu za posebna dostignuća od Udruženja istraživača svemira u Rijadu, Saudijska Arabija, imao sam povlasticu da se obratim najvećem skupu astronauta ikada okupljenom na jednom mestu. (Njih više od pedeset, uključujući tu Baza Oldrina i Majka Kolinsa sa 'Apola 11', kao i prvog 'svemirskog šetača', Alekseja Leonova, koji više nema neprilika zbog toga što deli posvetu za roman 2010: Druga odiseja sa Andrejom Saharovom.) Odlučio sam da im proširim vidike uvođenjem u nešto što je stvarno veliko i, sa astronautom princom Sultanom bin Salmanom bin Abdul Azizom kao predsedavajućim, održao sam bogato ilustrovano predavanje: 'Boje večnosti: istraživanje Vaseljene fraktala'.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Materijal koji sledi izvadak je iz mog govora; drugi deo pojavljuje se na početku 15. poglavlja. Jedino mi je žao što ne mogu da ga ilustrujem veličanstvenim 35-milimetarskim slajdovima - i video-snimcima - koje sam koristio u Rijadu.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Danas svi znaju za dijagrame - naročito za onaj na kome je vreme prikazano na vodoravnoj osi, a troškovi života koji se neprekidno penju na uspravnoj. Zamisao da se bilo koja tačka jedne ravni može izraziti pomoću dva broja, obično zapisana kao x i y, sada izgleda toliko očigledno da deluje prilično iznenađujuće da je svet matematike morao da sačeka do 1637. kako bi Dekart izmislio ovaj sistem.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I dalje otkrivamo posledice te naizgled jednostavne zamisli, a najneverovatnija među njima stara je tek deset godina. Naziva se Mandelbrotov skup (nadalje: M-skup) i uskoro ćete je sretati svuda - u dezenu tkanina, tapeta, nakita ili linoleuma. I, bojim se, iskakaće pred vas sa TV ekrana u svakoj drugoj reklami.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pa ipak, svojstvo M-skupa koje najviše zapanjuje jeste njegova suštinska jednostavnost. Za razliku od svega ostalog u savremenoj matematici, svaki učenik u stanju je da razume kako se on stvara. Njegovo generisanje ne uključuje ništa naprednije od sabiranja i množenja; nema potrebe za tako složenim stvarima kao što je oduzimanje ili - Bože sakloni! - deljenje, a da i ne pominjemo egzotičnije zverinje iz matematičke menažerije.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ne može biti mnogo ljudi u civilizovanom svetu koji nisu naišli na slavno Ajnštajnovo E = mc <SUP>2</SUP>, ili koji su ga smatrali beznadežno složenim da bi ga shvatili. Pa, jednačina koja definiše M-skup sadrži isti broj članova i zaista deluje veoma slično. Evo je:
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Z = z <SUP>2</SUP> + c
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nije baš zastrašujuća, zar ne? Pa ipak, životni vek čitave Vaseljene ne bi bio dovoljan da se istraže sve njene granice.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z-ovi i c u Mandelbrotovoj jednačini svi su brojevi, a ne (kao kod Ajnštajna) fizičke veličine poput mase i energije. To su koordinate koje određuju položaj tačke, a jednačina kontroliše način na koji se ova kreće da bi ocrtala određeni lik.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Postoji veoma jednostavna analogija koja je svima poznata - one dečje knjige sa praznim stranicama poprskanim tu i tamo brojevima, koji kada se spoje na pravi način otkrivaju skrivene - i često iznenađujuće - slike. Slika na TV ekranu proizvedena je složenom primenom tog istog načela.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Teorijski, svako ko je u stanju da sabira i množi može da nacrta M-skup olovkom ili perom na listu milimetarskog papira. Međutim, kao što ćemo videti kasnije, postoje određene praktične teškoće - naime, činjenica da ljudski život retko iznosi više od stotinu godina. Zbog toga se skup bez izuzetka stvara kompjuterski i obično prikazuje na jedinici vizuelnog displeja.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Postoje dva načina da se locira tačka u prostoru. Uobičajeniji način koristi neku referencijalnu mrežu - zapad-istok, sever-jug ili, na hartiji za dijagrame, vodoravna X-osa i okomita Y-osa. Ali postoji i sistem koji se koristi na radaru, sada poznat većini ljudi zahvaljujući bezbrojnim filmovima. Ovde je položaj objekta određen (1) njegovim rastojanjem od koordinatnog početka i (2) njegovim smerom, ili kompasnim pravcem. Uzgred budi rečeno, to je prirodni sistem - onaj koji koristite automatski i nesvesno kada igrate bilo koju igru sa loptom. Tada vodite računa o rastojanju i uglovima, a vi ste koordinatni početak.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zbog toga, razmišljajte o kompjuterskom monitoru kao o radarskom ekranu, sa samo jednim odrazom na njemu, čiji će pokreti ocrtati M-skup. Međutim, pre nego što uključimo radar, želim da još više pojednostavim jednačinu, samo na oblik:
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Z = z <SUP>2</SUP>
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Na trenutak sam odbacio c i ostavio samo z-ove. Sada mi dopustite da ih malo preciznije odredim.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Malo z je prvobitno rastojanje odraza - rastojanje sa kojim ono počinje. Veliko Z je krajnje rastojanje od koordinatnog početka. Zbog toga, ukoliko je ono prvobitno bilo na 2 jedinice od njega, poštujući ovu jednačinu ono će spremno skočiti na rastojanje od 4.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ništa zbog čega bi se trebalo uzbuđivati, ali sada dolazi izmena koja stvara čitavu razliku:
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Z = z <SUP>2</SUP>
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dvostruka strelica je saobraćajni znak za oba smera, koji naznačuje da brojevi protiču obostrano. Ovog puta, ne zaustavljamo se na Z = 4; učinićemo njega jednakim novom z - koje nam smesta daje drugo Z jednako 16, i tako dalje. Čas posla stvorili smo niz:
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;256;65.536;4.294.967.296.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a tačka koja je krenula sa udaljenosti od samo 2 jedinice od centra žuri prema beskonačnosti ogromnim koracima koji se sve vreme povećavaju.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Taj proces ide u krug po petlji koja se naziva 'iteracija'. Nalik je psu koji progoni sopstveni rep, osim što pas ne dospeva nikuda. Ali matematička iteracija može da nas odvede do nekih zaista veoma čudnovatih mesta - kao što ćemo vrlo skoro otkriti.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sada smo spremni da uključimo svoj radar. Većina displeja imaju krugove rastojanja na 10, 20,... 1000 kilometara od središta. Nama će biti potreban samo jedan krug, na rastojanju 1. Nema potrebe da određujemo jedinice, jer se bavimo čistim brojevima. Neka budu centimetri ili svetlosne godine, kako god vas je volja.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pretpostavimo da je prvobitni položaj našeg odraza bilo gde na tom krugu - sam položaj nije bitan. Dakle, z je 1.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A zbog toga što je 1 na kvadrat i dalje 1, toliko će biti i Z. A ovo ostaje na toj vrednosti, zbog toga što koliko god puta da kvadrirate 1, ono uvek ostaje tačno 1. Odraz može da skače i skače po krugu, ali uvek ostaje na njemu.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Razmotrimo sada slučaj u kome je prvobitno z veće od 1. Već smo videli koliko brzo odraz skače do beskonačnosti ukoliko je z jednako 2 - ali ista stvar dogodiće se pre ili kasnije, čak i ukoliko je ono samo za mikroskopsku trunčicu veće od 1: recimo, 1,00000000000000000001. Pogledajte:
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prvim kvadriranjem, Z postaje
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,00000000000000000002
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a onda
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,00000000000000000004
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,00000000000000000008
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,00000000000000000016
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,00000000000000000032
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i tako stranicama listinga. Za sve praktične primene, vrednost je i dalje 1. Tačka se nije pomerila vidljivo prema napolje ili unutra; i dalje je na krugu čija je vrednost 1.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ali te nule polako otpadaju, kao brojevi nezaustavljivo marširaju sa desne strane. Odjednom, nešto se pojavljuje na trećem, drugom, prvom decimalnom mestu - i brojevi eksplodiraju posle veoma malo dodatnih kvadriranja, kao što ovaj primer pokazuje:
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,001 1,002 1,004 1,008 1,016 1,032
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,066 1,136 1,292 1,668 2,783 7,745
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;59,987 3.598,467 12.948.970
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;167.675.700.000.000
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;28.115.140.000.000.000.000.000.000.000
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Van opsega)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Može da bude milion - milijardu - nula sa desne strane, ali ishod će uvek biti isti. Konačno će brojevi početi da se primiču decimalnoj tački - a onda će Z munjevito uzleteti do beskonačnosti.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A sada razmotrimo drugi slučaj. Pretpostavimo da je z za mikroskopski iznos manje od 1 - recimo:
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0,99999999999999999
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kao i pre, ništa posebno se ne dešava zadugo dok idemo po petlji, osim što brojevi sa desne strane ravnomerno postaju sve manji. Ali posle nekoliko hiljada ili miliona iteracija - katastrofa! Z se iznenada smanjuje ni do čega, rastapa se u beskrajni niz nula...
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proverite na svom kompjuteru. On ume da radi samo sa dvanaest brojki? Pa, koliko god ih imate za igru, uvek ćete dobijati isti odgovor. Verujte mi...
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ishod ovog 'programa' može se uobličiti u tri zakona koja mogu delovati previše trivijalno da bi ih uopšte vredelo formulisati. Ali nijedna matematička istina nije trivijalna, a kroz još nekoliko koraka ti zakoni odvešće nas u Vaseljenu vrtoglavih čudesa i lepote.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evo tri zakona programa 'Kvadriranje':
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Ukoliko je ulazno z jednako jedinici, izlazno Z uvek ostaje 1.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Ukoliko je ulaz veći od 1, izlaz na kraju postaje beskonačan.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Ukoliko je ulaz manji od 1, izlaz na kraju postaje nula.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Taj krug prečnika 1 je prema tome neka vrsta mape - ili, ukoliko tako više volite, ograde - koja razdvaja ravan u dve nezavisne teritorije. Van nje, brojevi koji poštuju zakon kvadriranja imaju slobodu beskonačnosti; brojevi unutar nje su zatvorenici, utamničeni i osuđeni na konačno istrebljenje.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U ovoj tački, neko bi mogao da kaže: "Govorili ste samo o razmacima - o rastojanjima od koordinatnog početka. Da biste utvrdili položaj odraza, potreban vam je i njegov ugao. Šta je s njime?"
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sasvim tačno. Srećom, u ovom procesu odabiranja - deljenju z-ova u dve odvojene klase - uglovi su nebitni; ista stvar se dešava bez obzira na to u kome pravcu je upereno r. Za ovaj jednostavni slučaj - nazovimo ga K-skupiom - možemo ih zanemariti. Kada dođemo do složenijeg slučaja M-skupa, gde ugao jeste bitan, postoji veoma zgodan matematički trik koji se stara o tome, korišćenjem kompleksnih ili imaginarnih brojeva (koji, u stvari, uošte nisu kompleksni, a još manje imaginarni). Ali ovde nam nisu potrebni i ja obećavam da ih više neću pominjati.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K-skup počiva unutar mape, a granica mu je krug koji je obuhvata. Taj krug je naprosto neprekidna linija bez ikakve debljine. Ukoliko ga pogledate pod mikroskopom beskonačnog uvećanja, on će uvek izgledati isto. Možete da širite K-skup do veličine Vaseljene; granica će mu i dalje biti linija nulte debljine. Pa ipak, u njoj nema rupa; to je apsolutno neprobojna prepreka, koja zauvek razdvaja z-ove manje od 1 od onih većih od 1.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A sada, konačno, spremni smo da se pozabavimo M-skupom, gde se te zdravorazumske zamisli okreću naglavce. Privežite pojaseve.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tokom sedamdesetih godina, francuski matematičar Benoa Mandelbrot, koji je radio na Harvardu i u IBM-u, počeo je da istražuje jednačinu koja ga je učinila slavnim i koju ću ja sada napisati u dinamičkom obliku:
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Z = z <SUP>2</SUP> + c
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jedina razlika između ove jednačine i jednačine koju smo koristili da opišemo K-skup jeste član c. Ovaj član - a ne više z - sada je početna tačka za našu operaciju stvaranja mape. U prvom prolasku petljom uzima se da je z jednako nuli.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To deluje kao beznačajna promena i niko nije bio u stanju da zamisli Vaseljenu koju je ona otkrila. Ni sam Mandelbrot nije stigao do prvih grubih uvida u nju sve do proleća 1980, kada su nejasni oblici počeli da se pojavljuju na kompjuterskim listinzima. Počeo je da viri kroz Kitsov
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Okvir čarobnih čini, otvoren ka peni
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opakih mora, u vilinskim zemljama izgubljenim...
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kao što ćemo videti, reč 'pena' ovde je iznenađujuće prikladna.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nova jednačina postavlja isto pitanje kao prethodna i odgovara na njega: kakvog oblika je 'teritorija' koja se ocrtava kada u njoj smenjujemo brojeve? Za K-skup bio je to krug poluprečnika 1. Da vidimo šta se dešava kada počnemo sa tom vrednošću za c u M-jednačini. Trebalo bi da ste u stanju da to učinite napamet - za prvih nekoliko koraka. Posle nekoliko desetina, međutim, čak i superkompjuter možda ugasi sveću.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Za početak: z = 0, c = 1. Znači Z = 1
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prva petlja: Z = 12 + 1 = 2
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Druga petlja: Z = 22 + 1 = 5
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Treća petlja:Z = 52 + 1 = 26
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Četvrta petlja: Z = 262 + 1... i tako dalje.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jednom sam ostavio kompjuter da izračunava više članove (otprilike granica mojih programerskih sposobnosti) i ovaj je proizveo samo još dve vrednosti pre nego što je počeo da računa približno:
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1, 2, 5, 26, 677, 458.330
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;21.006.640.000
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.412.789.000.000.000.000.000
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U toj tački odustao je, jer nije verovao da postoje brojevi sa više od 38 brojki.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Međutim, čak i prva dva ili tri člana sasvim su dovoljna da prikažu kako M-skup mora imati sasvim drugačiji oblik od savršeno kružnog koji se javlja kod K-skupa. Tačka na rastojanju 1 je unutar K-skupa; ona mu, naime, određuje granicu. Tačka na istom rastojanju može biti izvan granica M-skupa.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Primetićete da sam rekao 'može biti', a ne 'mora'. Sve zavisi od prvobitnog smera, ili ugla početne tačke, koga smo do sada mogli da zanemarujemo, jer nije uticao na našu raspravu o (savršeno simetričnom) K-skupu. Kao što se pokazuje, M-skup je simetričan samo oko X-ose ili vodoravne ose.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To bi se moglo pretpostaviti na osnovu prirode jednačine. Ali niko ne bi mogao da pogodi pravi oblik ovog skupa: da mi je to pitanje postavljeno u devičanskim premandelbrotovskim danima, verovatno bih rizikovao i rekao: 'Nešto nalik na elipsu, zgnječeno duž Y-ose.' Možda bih čak (iako sumnjam u to) ispravno pogodio da bi bio pomeren u levi, odnosno minus smer.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U ovoj tački voleo bih da uz vašu pomoć preduzmem jedan misaoni ogled. Budući da je M-skup bukvalno neopisiv, evo mog pokušaja da ga ipak opišem:
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zamislite da gledate pravo niz jednu prilično gojaznu kornjaču koja pliva prema zapadu. Ona je ukrštena sa ribom sabljarkom, tako da ima uski šiljak koji viri iz nje. Po čitavoj spoljašnjosti ukrašena je bizarnim morskim rastinjem - i mladim kornjačama različitih veličina, po kojima raste još manja morska trava...
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Čikam vas da pronađete takav opis u bilo kojoj matematičkoj knjizi. A ukoliko budete smatrali da biste umeli uspešnije pošto vidite neman, samo izvolite da pokušate. (Podozrevam da svet insekata možda pruža bolje analogije: nije isključeno da negde u brazilskim tropskim šumama vreba Mandelbrot-buba. Šteta što to nikada nećemo saznati.)
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evo prve grube aproksimacije, lišene pojedinosti - prilično slične 'Jezeru Mandelbrot' iz zamka Konroj (18. poglavlje). Ukoliko vam se dopadne da popunite praznine omiljenom rečenicom srednjevekovnih kartografa 'Ovde možda ima zmajeva', teško da ćete preterivati.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Najpre ćete primetiti da je - kao što sam već istakao - pomerena ulevo (ili prema zapadu, ako vam se tako više sviđa) u odnosu na K-skup, koji se, razume se, pruža od +1 do -1 duž X-ose. M-skup stiže samo do 0,25 udesno po X-osi, dok iznad i ispod te ose štrči do otprilike iza 0,4.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sa leve strane, mapa se pruža do oko -1,4, a zatim ispušta neobični šiljak - ili antenu - koji dostiže tačno -2,0. Za M-skup, iza te tačke nema ničega; ona je rub Vaseljene. Mandelbrotovi obožavaoci nazivaju je 'krajnji zapad', a vi biste možda voleli da vidite šta se dešava kada uzmete da je c jednako -2. Z ne teži nuli - ali ne juri ni do beskonačnosti - tako da tačka pripada skupu - baš na granici. Ali ukoliko uzmete da je c malčice veće, na primer -2,00000...00000001, pre nego što to i opazite prošišaćete pored Plutona i hitati prema kvazarskom zapadu.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A sada dolazimo na najbitniju razliku između dva skupa.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K-skup ima za granicu lepu, čistu liniju. Granica M-skupa je, da kažemo najblaže, čupava. Koliko čupava, to ćete uvideti kada budemo počeli da je 'zumiramo'; tek tada ćemo videti neverovatnu floru i faunu koja cveta na toj spornoj teritoriji.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Granica - ukoliko se može tako nazvati - M-skupa nije puka linija; ona je nešto što Euklid nikada nije zamišljao i za šta nema reči u običnom jeziku. Mandelbrot, čije je snalaženje sa engleskim (i američkim) očajno, prekopao je rečnik u potrazi za sugestivnim imenicama. Evo nekoliko primera: pena, spužve, prašina, paučine, mreže, ugrušci. On sam skovao je tehnički naziv fraktal i sada žustro brani svakome da pokuša da je definiše previše precizno.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kompjuteri lako mogu da naprave 'snimke' M-skupa sa bilo kojim uvećanjem, a čak i u crno-belom oni su opčinjavajući. Međutim, prostim trikom mogu se obojiti i preobraziti u objekte zapanjujuće, čak nadrealne lepote.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prvobitna jednačina, razume se, ne bavi se bojama ništa više od Euklidovih Elemenata geometrije. Ali ukoliko kažemo kompjuteru da oboji svaku datu oblast u skladu sa brojem puta koliko je z prošlo kroz petlju pre nego što je odlučio da li tačka pripada ili ne pripada M-skupu, ishodi su uistinu božanstveni.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Boje, stoga, iako proizvoljne, nisu besmislene. Tačna analogija nalazi se u kartografiji. Pomislite na konturne linije na mapi reljefa, koje prikazuju nadmorsku visinu. Prostor između njih često je obojen da bi oko lakše prihvatilo informaciju koju one nose. Isto je sa batimetrijskim kartama; što dublji okean, plavo je tamnije. Tvorac mape može da izabere kakve god boje hoće, a pri tom ga vodi estetika isto toliko koliko i geografija.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To važi i ovde - izuzev što se ove konturne linije postavljaju automatski brzinom izračunavanja - ali neću zalaziti u pojedinosti. Nisam otkrio koji je genije prvi došao na tu ideju - možda msje M. lično, ali ona pretvara fraktale u fantastična umetnička dela. A treba da ih vidite kada su animirani...
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jedna od mnogih neobičnih primisli koje izaziva M-skup jeste i ova. U načelu, on je mogao biti otkriven čim je ljudska rasa naučila da broji. U praksi, budući da čak i 'malo uvećanje' zahteva milijarde proračuna, nije bilo načina na koji se mogao makar i baciti pogled na M-skup pre nego što su izmišljeni kompjuteri! A takvi filmovi kao što je 'Ništa osim zuma' Art Matriksa zahtevali bi da svi ljudi koji trenutno žive na svetu računaju dan i noć godinama - ne načinivši pri tom ni jednu jedinu grešku u množenju biliona brojeva sa po stotinu brojki...
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Počeo sam rečima da je Mandelbrotov skup najizuzetnije otkriće u istoriji matematike. Jer ko je mogao i da pomisli da tako apsurdno jednostavna jednačina može da stvori tako - bukvalno - beskonačnu složenost i tako nezemaljsku lepotu.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mandelbrotov skup je, kao što sam pokušao da objasnim, u suštini mapa. Svi smo imali prilike da čitamo priče o mapama koje otkrivaju položaj skrivenog blaga.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pa, u ovom slučaju - sama mapa jeste blago!
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kolombo, Šri Lanka: 28. februar 1990.
+</TD></TR></TABLE>
+</CENTER>
+</BODY>
+</HTML>

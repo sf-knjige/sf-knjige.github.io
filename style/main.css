@@ -1,0 +1,144 @@
+BODY
+{
+    BACKGROUND-IMAGE: url(../../graphics/pozadina.gif);
+    COLOR: #000000;
+    FONT-FAMILY: Times New Roman, Times, serif;
+    MARGIN-LEFT: 0px;
+    MARGIN-TOP: 0px;
+}
+H1
+{
+    COLOR: black;
+    FONT-FAMILY: Arial, Helvetica;
+    FONT-SIZE: 14pt;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center;
+}
+H2
+{
+    COLOR: black;
+    FONT-FAMILY: Times New Roman, Times, serif;
+    FONT-SIZE: 14pt;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center;
+}
+H3
+{
+    COLOR: black;
+    FONT-FAMILY: Arial, Helvetica;
+    FONT-SIZE: 12pt;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center;
+}
+H4
+{
+    COLOR: black;
+    FONT-FAMILY: Arial, Helvetica;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center;
+}
+H5
+{
+    COLOR: black;
+    FONT-FAMILY: Times New Roman, Times, serif;
+    FONT-SIZE: 10pt;
+    TEXT-ALIGN: center;
+}
+P
+{
+    COLOR: black;
+    FONT-FAMILY: Times New Roman, Times, serif;
+    FONT-SIZE: 12pt;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: normal;
+    TEXT-ALIGN: justify;
+}
+BR
+{
+    COLOR: black;
+    FONT-FAMILY: Times New Roman, Times, serif;
+    FONT-SIZE: 12pt;
+    FONT-STYLE: normal;
+    TEXT-ALIGN: justify;
+}
+UL
+{
+    COLOR: black;
+    FONT-FAMILY: Times New Roman, Times, serif;
+    FONT-SIZE: 12pt;
+    FONT-STYLE: normal;
+    TEXT-ALIGN: justify;
+}
+OL
+{
+    COLOR: black;
+    FONT-FAMILY: Times New Roman, Times, serif;
+    FONT-SIZE: 12pt;
+    FONT-STYLE: normal;
+    TEXT-ALIGN: justify;
+}
+LI
+{
+    COLOR: black;
+    FONT-FAMILY: Times New Roman, Times, serif;
+    FONT-SIZE: 12pt;
+    FONT-STYLE: normal;
+    TEXT-ALIGN: justify;
+}
+SUP
+{
+    FONT-SIZE: 10pt;
+}
+SUB
+{
+    FONT-SIZE: 10pt;
+}
+P.uvucen
+{
+    TEXT-INDENT: 20em;
+}
+TD.naslov
+{
+    FONT-SIZE: 16pt;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center;
+}
+P.desno
+{
+    FONT-SIZE: 12pt;
+    TEXT-ALIGN: right;
+}
+P.naslov
+{
+    FONT-SIZE: 16pt;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center;
+}
+P.podnaslov
+{
+    FONT-SIZE: 14pt;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center
+}
+P.next
+{
+    TEXT-ALIGN: center;
+}
+EM
+{
+    COLOR: #004080;
+    FONT-FAMILY: Arial, Helvetica;
+    FONT-SIZE: 10pt;
+    FONT-STYLE: normal;
+}
+P.sred
+{
+    FONT-SIZE: 12pt;
+    TEXT-ALIGN: center;
+}
+TD.sred
+{
+    FONT-SIZE: 12pt;
+    TEXT-ALIGN: center;
+}

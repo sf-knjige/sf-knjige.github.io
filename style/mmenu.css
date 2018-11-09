@@ -1,0 +1,37 @@
+BODY {
+    background: #000000;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica;
+}
+
+P, BR, UL, OL, TD, TH, LI  {
+    color: #FFFFFF;
+    font-family: Arial, Helvetica;
+    font-size: 10pt;
+}
+
+HR {
+    color: black;
+}
+
+A {
+    font-family: Arial, Helvetica;
+    font-weight: bold;
+    font-size: 10pt;
+    text-decoration: none;
+    color: #33ccff;
+}
+
+A:active {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10pt;
+    color: #FF0000;
+}
+
+A:hover {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10pt;
+    color: #ffffff;
+}

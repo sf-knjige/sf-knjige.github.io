@@ -1,0 +1,84 @@
+BODY
+{
+    BACKGROUND-IMAGE: url(../graphics/title-poz.jpg);
+    COLOR: #000000;
+    FONT-FAMILY: Times New Roman, Times, serif;
+    TEXT-ALIGN: center
+}
+P
+{
+    COLOR: #000000;
+    FONT-FAMILY: Times New Roman, Times, serif;
+    FONT-SIZE: 14pt
+    TEXT-ALIGN: center
+}
+P.copy
+{
+    FONT-SIZE: 16pt
+}
+BR
+{
+    COLOR: #000000;
+    FONT-FAMILY: Times New Roman, Times, serif;
+    FONT-SIZE: 13pt
+    TEXT-ALIGN: center
+}
+UL
+{
+    COLOR: #000000;
+    FONT-FAMILY: Times New Roman, Times, serif;
+    FONT-SIZE: 13pt
+}
+OL
+{
+    COLOR: #000000;
+    FONT-FAMILY: Times New Roman, Times, serif;
+    FONT-SIZE: 13pt
+}
+TD
+{
+    COLOR: #000000;
+    FONT-FAMILY: Times New Roman, Times, serif;
+    FONT-SIZE: 13pt
+}
+LI
+{
+    COLOR: #000000;
+    FONT-FAMILY: Times New Roman, Times, serif;
+    FONT-SIZE: 13pt
+}
+TH
+{
+    COLOR: #000000;
+    FONT-FAMILY: Times New Roman, Times, serif;
+    FONT-SIZE: 13pt;
+    FONT-WEIGHT: bold
+}
+HR
+{
+    COLOR: black
+}
+A
+{
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+A:active
+{
+    COLOR: #ff0000;
+    FONT-FAMILY: Arial, Helvetica;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR: #808080;
+    FONT-FAMILY: Arial, Helvetica;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: bold;
+    TEXT-DECORATION: none
+}
