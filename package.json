@@ -4,7 +4,9 @@
   "description": "UVOD",
   "main": "tools.js",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.3"
+    "cheerio": "^1.0.0-rc.3",
+    "ebook-convert": "^2.0.1",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {

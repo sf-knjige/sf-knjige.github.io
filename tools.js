@@ -1,9 +1,7 @@
-const path = require('path')
 const fs = require('fs')
 const cheerio = require('cheerio')
 
 const dir = './knjige/'
-const subdir = '1984'
 
 const getNum = str => str.match(/\d+/) ? str.match(/\d+/)[0] : 0
 
