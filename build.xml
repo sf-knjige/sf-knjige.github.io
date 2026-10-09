@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." name="create-metadata">
+    
+    <xslt style="../../pick-title.xsl" in="index0.html"  out="md/00-title.md">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="/path/to/saxon/saxon9he.jar"/>
+    </xslt> 
+    
+</project>
